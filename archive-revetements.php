@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying all single posts
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Sushi_Bar
+ * @package Ping-Passion
  */
 
 get_header();

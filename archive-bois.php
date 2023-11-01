@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying all single posts
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Sushi_Bar
+ * @package Ping-Passion
  */
 
 get_header();
@@ -14,15 +14,15 @@ get_header();
 
     <?php if (have_posts()) : ?>
 
-        <section class="bois-wrapper"> <!-- Remplace "revetements" par "bois" ici -->
+        <section class="bois-wrapper">
             <?php
             /* Start the Loop */
             while (have_posts()) :
                 the_post();
             ?>
-			<a href="<?php the_permalink(); ?>" class="bois-card" style="text-decoration: none; color: inherit;"> <!-- Remplace "revetements" par "bois" ici -->
+			<a href="<?php the_permalink(); ?>" class="bois-card" style="text-decoration: none; color: inherit;"> 
 				<?php the_post_thumbnail(); ?>
-				<div class="bois-card__content"> <!-- Remplace "revetements" par "bois" ici -->
+				<div class="bois-card__content">
 					<h2><?php the_title(); ?></h2>
 					<?php the_excerpt(); ?>
 				</div>

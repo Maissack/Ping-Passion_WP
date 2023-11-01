@@ -70,7 +70,6 @@
     background-color: #FF6347;
 }
 
-/* Répétez le code CSS de l'effet de survol pour la classe "bois" */
 .bois-card {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;

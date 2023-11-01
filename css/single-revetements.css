@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.site {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1;
+}
+
+.single-revetement .revetements-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.single-revetement .revetements-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.single-revetement .revetements-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.single-revetement .revetements-card__content {
+    padding: 20px;
+    text-align: center;
+}
+
+.single-revetement .revetements-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.single-revetement .revetements-card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.single-revetement section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 30px;
+}
+
+.single-revetement section p {
+    font-size: 18px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.single-revetement .site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

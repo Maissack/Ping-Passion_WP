@@ -7,34 +7,56 @@
  * @package Ping-Passion
  */
 
+$dataRevetements = get_fields();
+var_dump($dataRevetements);
+
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+    <?php if (have_posts()) : ?>
 
-			get_template_part( 'template-parts/content', get_post_type() );
+        <section class="revetements-wrapper"> 
+            <?php
+            /* Start the Loop */
+            while (have_posts()) :
+                the_post();
+            ?>
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'ping-passion' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'ping-passion' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
+            <article class="revetements-card"> 
+                <?php the_post_thumbnail(); ?>
+                <div class="revetements-card__content"> 
+                    <h2><?php the_title(); ?></h2>
+                    <?php the_excerpt(); ?>
+                </div>
+            </article>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+            <section>
+                <h2>Informations revêtements</h2>
+                <p>La rapidité : <?= $dataRevetements['rapidité'] ?></p>
+                <p>Le contrôle : <?= $dataRevetements['contrôle'] ?></p>
+                <p>L'adhérence : <?= $dataRevetements['adhérence'] ?></p>
+                <p>L'épaisseur : <?= $dataRevetements['épaisseur'] ?></p>
+            </section>
 
-		endwhile; // End of the loop.
-		?>
+            <?php
+            endwhile;
+            ?>
 
-	</main><!-- #main -->
+        </section>
+        <?php
+
+        the_posts_navigation();
+
+    else :
+
+        get_template_part('template-parts/content', 'none');
+
+    endif;
+    ?>
+
+</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

@@ -82,24 +82,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 
-/* Styles for the main navigation menu */
-
-
-/* Styles for the header and navigation menu */
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightskyblue; /* Couleur de fond du header */
-    color: #fff; /* Couleur du texte du header */
+    background-color: lightskyblue; 
+    color: #fff; 
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for the main navigation menu */
+
 .main-navigation {
     display: flex;
-    justify-content: center; /* Aligner horizontalement les éléments du menu */
+    justify-content: center; 
     align-items: center;
 }
 
@@ -113,41 +109,62 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .main-navigation li {
     margin: 0;
     padding: 0;
-    margin-left: 20px; /* Marge entre les éléments du menu, ajustez selon vos préférences */
+    margin-left: 20px; 
 }
 
 .main-navigation a {
-    color: #fff; /* Couleur du texte du menu */
+    color: #fff; 
     text-decoration: none;
-    font-weight: bold; /* Police en gras */
+    font-weight: bold;
     transition: color 0.3s;
     display: flex;
     align-items: center;
-    padding: 10px; /* Ajout de rembourrage pour l'espace autour des liens */
+    padding: 10px; 
 }
 
 .main-navigation a:hover {
-    color: #ff6600; /* Couleur au survol des liens du menu */
+    color: #ff6600; 
 }
 
 
 
 
-/* Style for the footer */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.site {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.site-content {
+    flex: 1;
+}
+
+
 .site-footer {
-    background-color: #e1e1e1; /* Background color similar to Apple's footer */
-    color: #444; /* Text color (dark gray) */
-    padding: 20px; /* Adjust the padding to your preference */
-    text-align: center; /* Center-align the text content */
-    font-size: 14px; /* Change the font size to your preference (e.g., 14px) */
+    background-color: #e1e1e1;
+    color: #444;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto;
 }
+
 
 .site-info a {
-    color: #444; /* Link color (dark gray) */
+    color: #444; 
 }
 
 .site-info a:hover {
-    text-decoration: underline; /* Add an underline on hover */
+    text-decoration: underline; 
 }
 
-/* Optionally, add more styles as needed */
+
