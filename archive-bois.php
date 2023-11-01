@@ -4,48 +4,47 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Ping-Passion
+ * @package Sushi_Bar
  */
 
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+    <?php if (have_posts()) : ?>
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+        <section class="bois-wrapper"> <!-- Remplace "revetements" par "bois" ici -->
+            <?php
+            /* Start the Loop */
+            while (have_posts()) :
+                the_post();
+            ?>
+			<a href="<?php the_permalink(); ?>" class="bois-card" style="text-decoration: none; color: inherit;"> <!-- Remplace "revetements" par "bois" ici -->
+				<?php the_post_thumbnail(); ?>
+				<div class="bois-card__content"> <!-- Remplace "revetements" par "bois" ici -->
+					<h2><?php the_title(); ?></h2>
+					<?php the_excerpt(); ?>
+				</div>
+			</a>
+            <?php
+            endwhile;
+            ?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+        </section>
+        <?php
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+        the_posts_navigation();
 
-			endwhile;
+    else :
 
-			the_posts_navigation();
+        get_template_part('template-parts/content', 'none');
 
-		else :
+    endif;
+    ?>
 
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
+</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
+?>

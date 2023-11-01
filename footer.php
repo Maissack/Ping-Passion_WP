@@ -22,7 +22,8 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ping-passion' ), 'ping-passion', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Copyright © 2023 Ping-passion. All rights reserved. | Website by %s.' ), '<a href="https://github.com/Maissack">Franck ZHANG</a>' );
+
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

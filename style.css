@@ -72,3 +72,82 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  @import url(css/archive-bois.css);
  @import url(css/single-bois.css);
 
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+/* Styles for the main navigation menu */
+
+
+/* Styles for the header and navigation menu */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightskyblue; /* Couleur de fond du header */
+    color: #fff; /* Couleur du texte du header */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the main navigation menu */
+.main-navigation {
+    display: flex;
+    justify-content: center; /* Aligner horizontalement les éléments du menu */
+    align-items: center;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navigation li {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px; /* Marge entre les éléments du menu, ajustez selon vos préférences */
+}
+
+.main-navigation a {
+    color: #fff; /* Couleur du texte du menu */
+    text-decoration: none;
+    font-weight: bold; /* Police en gras */
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Ajout de rembourrage pour l'espace autour des liens */
+}
+
+.main-navigation a:hover {
+    color: #ff6600; /* Couleur au survol des liens du menu */
+}
+
+
+
+
+/* Style for the footer */
+.site-footer {
+    background-color: #e1e1e1; /* Background color similar to Apple's footer */
+    color: #444; /* Text color (dark gray) */
+    padding: 20px; /* Adjust the padding to your preference */
+    text-align: center; /* Center-align the text content */
+    font-size: 14px; /* Change the font size to your preference (e.g., 14px) */
+}
+
+.site-info a {
+    color: #444; /* Link color (dark gray) */
+}
+
+.site-info a:hover {
+    text-decoration: underline; /* Add an underline on hover */
+}
+
+/* Optionally, add more styles as needed */
