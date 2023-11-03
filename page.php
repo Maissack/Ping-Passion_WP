@@ -17,12 +17,19 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<?php
-		
-		?>
-
+	<div class="home-section">
+        <p>Plus de 50m carré dédiés au Ping ! Au centre de Paris</p>
+        <h1>PING-PASSION</h1>
+        <h2>VOUS ACCUEILLE ET VOUS CONSEILLE</h2>
+        <h3>Du mardi au vendredi de 8h à 18h<br>Le samedi de 10h à 18h</h3>
+        
+        <div class="address-box">
+            <p>7 Quai d'Austerlitz - 75013 Paris</p>
+        </div>
+        <br/><br/><br/><br/><br/><br/>
+    </div>
 	</main><!-- #main -->
-
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <?php
 
 get_footer();

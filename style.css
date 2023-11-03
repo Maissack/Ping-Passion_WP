@@ -71,31 +71,28 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  @import url(css/single-revetements);
  @import url(css/archive-bois.css);
  @import url(css/single-bois.css);
+ @import url(css/page.css);
 
 
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-
-
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightskyblue; 
-    color: #fff; 
+    background-color: #fff;
+    color: #444; 
     padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 .main-navigation {
     display: flex;
-    justify-content: center; 
     align-items: center;
 }
 
@@ -109,43 +106,23 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .main-navigation li {
     margin: 0;
     padding: 0;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .main-navigation a {
-    color: #fff; 
+    color: #333; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
-    display: flex;
-    align-items: center;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .main-navigation a:hover {
     color: #ff6600; 
 }
 
-
-
-
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-
-.site {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.site-content {
-    flex: 1;
+.main-navigation img {
+    height: 40px;
 }
 
 
@@ -155,16 +132,21 @@ html, body {
     padding: 20px;
     text-align: center;
     font-size: 14px;
-    margin-top: auto;
 }
 
+.site-info {
+    
+    padding: 20px 0;
+    color: #333;
+}
 
 .site-info a {
-    color: #444; 
+    color: #ff6600; 
+    text-decoration: none;
 }
 
 .site-info a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 
