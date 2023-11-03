@@ -8,7 +8,7 @@
  */
 
 $dataRevetements = get_fields();
-var_dump($dataRevetements);
+
 
 get_header();
 ?>

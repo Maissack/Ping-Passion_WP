@@ -14,6 +14,7 @@ html, body {
     flex: 1;
 }
 
+
 .single-revetement .revetements-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
