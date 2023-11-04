@@ -1,3 +1,5 @@
+<!-- LIEN DE LA VIDÉO EXPLICATIVE : https://youtu.be/IaNl-z3WhWc-->
+
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
